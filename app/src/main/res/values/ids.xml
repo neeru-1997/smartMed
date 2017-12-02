@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="settings" type="id" />
+    <item name="about" type="id" />
+    <item name="browse_catalog" type="id" />
+    <item name="select_photo" type="id" />
+    <item name="action_settings" type="id" />
+    <item name="description" type="id" />
+    <item name="symptoms" type="id" />
+    <item name="search_med" type="id" />
+    <item name="recycler_view" type="id" />
+    <item name="baseLayout" type="id">baseLayout</item>
+    <item name="tname" type="id">tname</item>
+</resources>

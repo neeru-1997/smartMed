@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="MEDICINE NAME"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"/>
+
+    <ScrollView
+        android:id="@id/description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="DESCRIPTION:"
+            android:layout_gravity="top"
+            android:textSize="30dp" />
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="PRICE : "
+        android:layout_marginTop="25dp"
+        android:textSize="30dp"/>
+
+    <ScrollView
+        android:id="@id/symptoms"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="SYMPTOMS"
+            android:layout_gravity="center"
+            android:textSize="30dp" />
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

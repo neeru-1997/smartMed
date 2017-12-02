@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.neerajvishwakarma.smartmed1.aboutUs">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="About smartMed"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20sp"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="1. You don't need any data pack for using this app ,it is completely offline app. \n\n2. Check information about any medicines easily and quickly. To check there are two ways:-\na)Click picture of medicines and upload it as Input. \nb)Choose any picture of madicine from your Gallery.\n\n3) You can also type the name of the medicine in the search box to get complete information about that particular medicine such as Description,Price,Symptoms.\n\n4) You can also type the name of the disease in the search box and the app will suggest you the medicines to cure that disease."
+        android:textSize="18sp"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>
