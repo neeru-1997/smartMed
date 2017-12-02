@@ -11,4 +11,7 @@
     <item name="recycler_view" type="id" />
     <item name="baseLayout" type="id">baseLayout</item>
     <item name="tname" type="id">tname</item>
+    <item name="logo" type="id">logo</item>
+    <item name="human3d" type="id">human3d</item>
+    <item name="medname" type="id">medname</item>
 </resources>

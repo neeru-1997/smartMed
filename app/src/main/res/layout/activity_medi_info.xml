@@ -4,9 +4,10 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@id/medname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="MEDICINE NAME"
+        android:hint=""
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:textSize="30dp"/>
@@ -43,7 +44,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="SYMPTOMS"
-            android:layout_gravity="center"
             android:textSize="30dp" />
 
     </ScrollView>

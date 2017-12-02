@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.neerajvishwakarma.smartmed1">
 
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".splashScreen">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,10 +22,11 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".photoFeature" />
-        <activity android:name=".seeCatalog" />
-        <activity android:name=".medi_info" />
-        <activity android:name=".aboutUs"></activity>
+        <activity android:name=".PhotoFeature" />
+        <activity android:name=".BrowseCatalog" />
+        <activity android:name=".MedInfo" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".HumanBody"></activity>
     </application>
 
 </manifest>

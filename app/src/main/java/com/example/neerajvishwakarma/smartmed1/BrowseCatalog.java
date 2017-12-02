@@ -1,7 +1,6 @@
 package com.example.neerajvishwakarma.smartmed1;
 
 import android.content.Intent;
-import android.support.v4.widget.TextViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -16,10 +15,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class seeCatalog extends AppCompatActivity implements SearchView.OnQueryTextListener{
+public class BrowseCatalog extends AppCompatActivity implements SearchView.OnQueryTextListener{
 
-    private ArrayList<medEnter> medList = new ArrayList<>();
-    ArrayList<medEnter> medListClone;
+    private ArrayList<MedEnter> medList = new ArrayList<>();
+    ArrayList<MedEnter> medListClone;
     private RecyclerView recyclerView;
     private MedicineAdapter medicineAdapter;
 
@@ -51,7 +50,7 @@ public class seeCatalog extends AppCompatActivity implements SearchView.OnQueryT
     public class MedicineAdapter extends RecyclerView.Adapter<MedicineAdapter.MyViewHolder>
     {
 
-        public MedicineAdapter(ArrayList<medEnter> medList){
+        public MedicineAdapter(ArrayList<MedEnter> medList){
 
         }
 
@@ -63,7 +62,7 @@ public class seeCatalog extends AppCompatActivity implements SearchView.OnQueryT
 
         @Override
         public void onBindViewHolder(MedicineAdapter.MyViewHolder holder, int position) {
-            medEnter medEnter = medList.get(position);
+            MedEnter medEnter = medList.get(position);
             holder.nameI.setText(medEnter.getName());
 
         }
@@ -81,7 +80,7 @@ public class seeCatalog extends AppCompatActivity implements SearchView.OnQueryT
             }else
             {
                 charText = charText.toLowerCase();
-                for(medEnter item : medListClone){
+                for(MedEnter item : medListClone){
                     if(item.getName().toLowerCase().contains(charText)){
                         medList.add(item);
                     }
@@ -103,9 +102,9 @@ public class seeCatalog extends AppCompatActivity implements SearchView.OnQueryT
                     @Override
                     public void onClick(View view) {
                         int position = getAdapterPosition();
-                        medEnter medEnter = medList.get(position);
-                        Intent i = new Intent(seeCatalog.this,medi_info.class);
-                        //i.putExtra("medToUpdate" ,medEnter);
+                        MedEnter medEnter = medList.get(position);
+                        Intent i = new Intent(BrowseCatalog.this,MedInfo.class);
+                        //i.putExtra("medToUpdate" ,MedEnter);
                         //startActivityForResult(i,UPDATE_MED);
                     }
                 });

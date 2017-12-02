@@ -4,7 +4,7 @@ package com.example.neerajvishwakarma.smartmed1;
  * Created by neerajvishwakarma on 02/12/17.
  */
 
-public class medEnter {
+public class MedEnter {
     private int id;
     private String name;
 
@@ -24,11 +24,11 @@ public class medEnter {
         this.id = id;
     }
 
-    public medEnter(){
+    public MedEnter(){
 
     }
 
-    public medEnter(int id,String name){
+    public MedEnter(int id, String name){
         this.id = id;
         this.name = name;
     }

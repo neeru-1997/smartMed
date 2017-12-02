@@ -3,7 +3,7 @@ package com.example.neerajvishwakarma.smartmed1;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class aboutUs extends AppCompatActivity {
+public class AboutUs extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.neerajvishwakarma.smartmed1.aboutUs">
+    tools:context="com.example.neerajvishwakarma.smartmed1.AboutUs">
 
     <TextView
         android:layout_width="wrap_content"

@@ -25,13 +25,6 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -74,7 +67,7 @@ public class MainActivity extends AppCompatActivity
         }
 
         else if(id == R.id.about){
-            Intent intent = new Intent(getApplicationContext(), aboutUs.class);
+            Intent intent = new Intent(getApplicationContext(), AboutUs.class);
             startActivity(intent);
         }
 
@@ -88,15 +81,33 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.select_photo) {
-            Intent intent = new Intent(getApplicationContext(), photoFeature.class);
+            Intent intent = new Intent(getApplicationContext(), PhotoFeature.class);
             startActivity(intent);
             // Handle the camera action
         } else if (id == R.id.browse_catalog) {
-                 Intent intent = new Intent(getApplicationContext(), seeCatalog.class);
+                 Intent intent = new Intent(getApplicationContext(), BrowseCatalog.class);
                   startActivity(intent);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    public void featureClicked(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(), PhotoFeature.class);
+        startActivity(intent);
+    }
+
+    public void browseClicked(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(), BrowseCatalog.class);
+        startActivity(intent);
+    }
+
+    public void bodyClicked(View view)
+    {
+        Intent intent = new Intent(getApplicationContext(), HumanBody.class);
+        startActivity(intent);
     }
 }

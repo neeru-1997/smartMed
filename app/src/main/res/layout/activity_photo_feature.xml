@@ -5,24 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.neerajvishwakarma.smartmed1.photoFeature">
+    tools:context="com.example.neerajvishwakarma.smartmed1.PhotoFeature">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/camera_logo"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:padding="100dp"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:onClick="cameraClicked"
+        >
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/gallery_icon"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:padding="100dp"/>
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/camera_logo"
+            android:padding="100dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click a Photo"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:onClick="galleryClicked"
+        >
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/gallery_icon"
+            android:padding="100dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browse From Gallery"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
 </LinearLayout>

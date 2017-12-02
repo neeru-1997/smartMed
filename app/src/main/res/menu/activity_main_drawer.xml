@@ -10,6 +10,10 @@
             android:id="@id/browse_catalog"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Browse Catalog" />
+        <item
+            android:id="@id/human3d"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Human Body in 3D" />
     </group>
 
     <item android:title="Communicate">
